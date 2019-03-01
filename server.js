@@ -1,10 +1,10 @@
 let express = require("express")
 let cors = require("cors")
 
-
 server = express()
 server.use(express.json())
 server.use(express.static("./static")) 
+
 
 server.get("/messages", ( req, res ) => {
     res.send(poraki)
